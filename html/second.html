@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="mensaje">
+      <h1>🥳 ¡Feliz Cumpleaños, ANIXE! 🎁</h1>
+      <p>
+       Te deseo lo mejor en tu día 💖<br> Se que varias veces me comentaste que no querias que llegue este dia 
+       <br> pero dejame decirte que los 20's es la edad perfecta para que tu brilles <br>
+        Siempre estaré a tu lado apoyandote. Eres un gran mujer y en este dia te ofrezco <br>
+         esta pequeña sorpresa, pero tranquila, tengo más jaja solo queria que observes todo <br>
+          lo que se puede hacer con la programación, este es mi mundo y espero te guste.<br>
+           ATTE: Tom enojado. </p>
+      </p>
+      <button id="galleryBtn">ENTRA PARA VER 👉</button>
+    </div>
+  </div>
+
+  <!-- 🎉 Confeti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    // Lanzar confeti al cargar
+    confetti({ particleCount: 200, spread: 120, origin: { y: 0.6 } });
+
+    // Botón que manda a la galería
+    document.getElementById("galleryBtn").addEventListener("click", () => {
+      window.location.href = "gallery.html"; // 👉 Te lleva a la página 3
+    });
+  </script>
+</body>
+</html>

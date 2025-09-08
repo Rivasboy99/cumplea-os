@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Botones */
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background: #e90879;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  background: #ff66b2;
+}
+
+/* Texto centrado */
+#mensaje {
+  text-align: center;
+}
+#mensaje h1 {
+  font-size: 2.5rem;
+  color: gold;
+}

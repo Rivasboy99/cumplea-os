@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería 🎥</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 10px;
+    }
+    /* 👇 Para hacer el video más grande */
+    .gallery video {
+      grid-column: span 2; /* El video ocupará 2 columnas */
+      max-height: 500px;   /* No se pase de altura */
+    }
+  </style>
+</head>
+<body>
+  <h1> LO MEJOR DE TI </h1>
+  <div class="gallery">
+    <img src="anixe.1.jpg" alt="Foto 1">
+    <img src="anixe.2..jpg" alt="Foto 2">
+    <img src="anixe.3.jpg" alt="Foto 3">
+    <img src="anixe.4.jpg" alt="Foto 4">
+    <img src="anixe.5.jpg" alt="Foto 5">
+    <img src="anixe.7.jpg" alt="Foto 5">
+
+    <video controls>
+      <source src="anixe.6.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </div>
+</body>
+</html>
